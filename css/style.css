@@ -133,7 +133,7 @@ p {
 }
 
 div.card-text {
-  padding: 32px 16px;
+  padding: 32px 16px 0px;
 }
 
 .link {
@@ -218,8 +218,15 @@ section class="hero"
 */
 
 .hero {
-  background-color: var(--dark);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-size: contain;
   width: 100%;
+  height: Z;
   padding: 188px 0;
 }
 
@@ -261,6 +268,14 @@ section class="about"
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.about-us-icons-wrap {
+  background-color: var(--light);
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  padding: 24px 100px;
+}
+
 /* 
 ===========================
 section class="services" 
@@ -294,12 +309,33 @@ section class="team"
   background-color: var(--white-background);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card:not(:last-child) {
   margin-right: 24px;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
+.social-icons-wrap {
+  gap: 24px;
+  align-items: center;
+  padding: 8px 16px 32px;
+}
+
+.social-icon {
+  background-color: var(--primary-brand);
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  background-color: var(--pressed-state);
+}
+
 /* 
 ===========================
 footer 
@@ -310,16 +346,44 @@ footer
   background-color: var(--dark);
   padding: 100px 0;
 }
+.footer-wrap {
+  justify-content: flex-start;
+  gap: 120px;
+}
 
-.footer-text {
+.footer-text > p {
   color: var(--light);
   width: 264px;
 }
+
+h4.footer-text {
+  font-weight: 600px;
+  color: var(--light);
+}
+
+.footer-icons > .social-icons-wrap {
+  padding: 16px 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-social-icon {
+  background-color: var(--primary-brand);
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 .footer-logo {
   color: var(--light);
 }
 .footer-link {
   margin-bottom: 16px;
+}
+
+.footer-social-icon:hover {
+  background-color: var(--success);
 }
 /* 
 ===========================
@@ -370,6 +434,9 @@ portfolio
   text-align: left;
 }
 
+.gallery-card-text > p {
+  padding-bottom: 32px;
+}
 .gallery-wrap {
   flex-wrap: wrap;
   row-gap: 48px;

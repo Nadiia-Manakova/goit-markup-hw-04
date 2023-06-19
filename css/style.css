@@ -56,10 +56,6 @@ ol {
   list-style-type: none;
 }
 
-section {
-  padding: auto;
-}
-
 /* 
 ===========================
 base styles
@@ -365,7 +361,7 @@ Customers
 }
 
 .customers-item:not(:last-child) {
-  flex-basis: calc((100%-5 * 24px) 6);
+  margin: 24px;
 }
 
 .customers-icons-wrap {
@@ -409,7 +405,7 @@ footer
 }
 
 h4.footer-text {
-  font-weight: 600px;
+  font-weight: 600;
   color: var(--light);
 }
 
@@ -572,6 +568,5 @@ form
 
 .is-hidden {
   visibility: hidden;
-  opacity: ;
   pointer-events: none;
 }

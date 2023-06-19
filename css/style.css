@@ -243,7 +243,6 @@ section class="hero"
     url(/images/people-office.jpg);
   background-size: cover;
   width: 100%;
-  height: Z;
   padding: 188px 0;
 }
 
@@ -530,4 +529,31 @@ portfolio
 
 .gallery-card:hover .overlay {
   transform: translateY(0);
+}
+
+/* 
+===========================
+form 
+===========================
+*/
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.close-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent);
+  border: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.close-icon {
+  position: absolute;
+  padding: 8px 8px;
 }

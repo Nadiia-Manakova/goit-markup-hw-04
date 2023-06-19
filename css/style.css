@@ -517,13 +517,10 @@ portfolio
 
 .gallery-image-box {
   overflow: hidden;
-}
-
-.overlay {
   position: relative;
 }
 
-.overlay-text {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -533,6 +530,9 @@ portfolio
   transform: translateY(100%);
   background-color: var(--primary-brand);
   padding: 40px 32px;
+}
+
+.overlay-text {
   color: var(--light);
 }
 

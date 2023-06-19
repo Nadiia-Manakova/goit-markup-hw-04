@@ -191,6 +191,22 @@ span {
   color: var(--pressed-state);
 }
 
+.active {
+  position: relative;
+  color: var(--pressed-state);
+}
+
+.active::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--pressed-state);
+  margin-top: 20px;
+}
+
 .address-item:not(:last-child) {
   margin-right: 40px;
 }

@@ -361,7 +361,7 @@ Customers
 }
 
 .customers-item:not(:last-child) {
-  margin: 24px;
+  flex-basis: calc((100% - 5 * 24px) / 6);
 }
 
 .customers-icons-wrap {

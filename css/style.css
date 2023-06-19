@@ -326,7 +326,7 @@ section class="team"
 
 .social-icon {
   background-color: var(--primary-brand);
-  padding: 12px;
+  padding: 11px 12px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -334,6 +334,39 @@ section class="team"
 
 .social-icon:hover {
   background-color: var(--pressed-state);
+}
+
+/* 
+===========================
+Customers
+===========================
+*/
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-item:not(:last-child) {
+  flex-basis: calc((100%-5 * 24px) 6);
+}
+
+.customers-icons-wrap {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customers-icons-wrap:hover {
+  border-color: var(--pressed-state);
+}
+.customers-icon {
+  fill: var(--subtle-text);
+}
+
+.customers-icon:hover {
+  fill: var(--pressed-state);
 }
 
 /* 

@@ -516,11 +516,14 @@ portfolio
 }
 
 .gallery-image-box {
-  position: relative;
   overflow: hidden;
 }
 
 .overlay {
+  position: relative;
+}
+
+.overlay-text {
   position: absolute;
   top: 0;
   left: 0;

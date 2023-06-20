@@ -428,7 +428,7 @@ footer
 
 .white-text,
 .social-icons-text {
-  color: var(--light);
+  color: var(--white-background);
   width: 264px;
 }
 
@@ -563,7 +563,10 @@ portfolio
   padding: 40px 32px;
 }
 
-.gallery-card:hover .overlay-text,
+.gallery-card:hover .overlay-text {
+  transform: translateY(0%);
+}
+
 .gallery-card:focus .overlay-text {
   transform: translateY(0%);
 }

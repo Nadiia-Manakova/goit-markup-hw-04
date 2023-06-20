@@ -402,6 +402,10 @@ Customers
   border-color: var(--pressed-state);
 }
 
+.customers-icon {
+  fill: currentColor;
+}
+
 /* 
 ===========================
 footer 
@@ -418,23 +422,31 @@ footer
   gap: 120px;
 }
 
-.footer-text > p {
+.footer-text {
+  margin-right: 120px;
+}
+
+footer p {
   color: var(--light);
   width: 264px;
 }
 
-h4.footer-text {
-  font-weight: 600;
-  color: var(--light);
+.social-icons-text {
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .footer-icons > .social-icons-list {
-  padding: 16px 0px;
+  padding: 0;
+  gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 .footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-brand);
   padding: 8px;
   width: 40px;

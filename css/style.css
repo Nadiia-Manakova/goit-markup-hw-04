@@ -129,7 +129,7 @@ p {
 }
 
 div.card-text {
-  padding: 32px 16px 0px;
+  padding: 32px 0px;
 }
 
 .link {
@@ -348,6 +348,9 @@ section class="team"
 }
 
 .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-brand);
   padding: 11px 12px;
   width: 40px;
@@ -356,10 +359,14 @@ section class="team"
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--pressed-state);
 }
 
+.icon-img {
+  fill: var(--light);
+}
 /* 
 ===========================
 Customers
@@ -441,7 +448,8 @@ h4.footer-text {
   margin-bottom: 16px;
 }
 
-.footer-social-icon:hover {
+.footer-social-icon:hover,
+.footer-social-icon:focus {
   background-color: var(--success);
 }
 /* 

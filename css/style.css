@@ -428,6 +428,7 @@ footer
 
 .white-text {
   color: var(--light);
+  width: 264px;
 }
 
 .social-icons-text {
@@ -524,6 +525,10 @@ portfolio
   border: 1px var(--accent) solid;
   border-top: none;
 }
+.gallery-card-text .list-title,
+.gallery-card-text .list-text {
+  padding-left: 16px;
+}
 
 .gallery-card-text > h2 {
   text-align: left;
@@ -543,7 +548,8 @@ portfolio
   position: relative;
 }
 
-.overlay {
+.overlay-text {
+  color: var(--light);
   position: absolute;
   top: 0;
   left: 0;
@@ -555,11 +561,7 @@ portfolio
   padding: 40px 32px;
 }
 
-.overlay-text {
-  color: var(--light);
-}
-
-.gallery-card:hover .overlay {
+.gallery-card:hover .overlay-text {
   transform: translateY(0);
 }
 

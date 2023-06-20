@@ -563,11 +563,11 @@ portfolio
   padding: 40px 32px;
 }
 
-.gallery-card:hover .overlay-text {
+.gallery-link:hover .overlay-text {
   transform: translateY(0%);
 }
 
-.gallery-card:focus .overlay-text {
+.gallery-link:focus .overlay-text {
   transform: translateY(0%);
 }
 

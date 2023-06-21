@@ -129,7 +129,7 @@ p {
 }
 
 div.card-text {
-  padding: 32px 0px;
+  padding: 32px 16px;
 }
 
 .link {
@@ -344,7 +344,6 @@ section class="team"
   gap: 24px;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px 32px;
 }
 
 .social-icon {
@@ -367,6 +366,11 @@ section class="team"
 .icon-img {
   fill: var(--light);
 }
+
+.card-text-item > p {
+  margin-bottom: 8px;
+}
+
 /* 
 ===========================
 Customers
@@ -419,7 +423,6 @@ footer
 .footer-wrap {
   justify-content: flex-start;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-text {
@@ -527,18 +530,11 @@ portfolio
   border: 1px var(--accent) solid;
   border-top: none;
 }
-.gallery-card-text .list-title,
-.gallery-card-text .list-text {
-  padding-left: 16px;
-}
 
 .gallery-card-text > h2 {
   text-align: left;
 }
 
-.gallery-card-text > p {
-  padding-bottom: 32px;
-}
 .gallery-wrap {
   flex-wrap: wrap;
   row-gap: 48px;
@@ -595,11 +591,10 @@ form
   position: absolute;
   width: 408px;
   min-height: 584px;
-  top: 50%;
+  top: 55%;
   left: 50%;
   background-color: var(--modal-background);
   border-radius: 4px;
-  margin: 80px auto;
   transform: translate(-50%, -50%) scale(1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
